@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Sencillo</title>
+    <link rel="icon" type="image/x-icon" href="/images/estrella-50.png">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Encabezados -->
+    <header>
+        <h1>Encabezado Principal</h1>
+        <h2>Encabezado Secundario</h2>
+        <h3>Encabezado Terciario</h3>
+    </header>
+
+    <!-- Menú lateral -->
+    <div class="sidebar">
+        <a href="#seccion1">Inicio</a>
+        <a href="#seccion3">Acerca de</a>
+        <a href="#seccion4">Contacto</a>
+    </div>
+
+    <!-- Sección de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#seccion1">Sección 1</a></li>
+            <li><a href="#seccion2">Sección 2</a></li>
+            <li><a href="#seccion3">Sección 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de contenido -->
+    <main>
+        <section id="seccion1">
+            <h2>Sección 1: Párrafos y Texto</h2>
+            <p>Este es un párrafo con <strong>texto en negrita</strong>, <em>texto en cursiva</em>, y <u>texto subrayado</u>.</p>
+            <p>Este es otro párrafo con un enlace a <a href="https://www.google.com">un sitio externo</a>.</p>
+        </section>
+
+        <br>
+        
+        <section id="seccion2">
+            <h2>Sección 2: Listas</h2>
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Primer elemento</li>
+                <li>Segundo elemento</li>
+                <li>Tercer elemento</li>
+            </ol>
+
+            <h3>Lista Desordenada</h3>
+            <ul>
+                <li>Elemento uno</li>
+                <li>Elemento dos</li>
+                <li>Elemento tres</li>
+            </ul>
+
+            <h3>Lista de Descripción</h3>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </section>
+
+        <br>
+        
+        <section id="seccion3">
+            <h2>Sección 3: Imágenes, Tablas y Formularios</h2>
+            
+            <!-- Imagen -->
+            <figure>
+                <img src="images/estrella-50.png" alt="Imagen de ejemplo">
+                <figcaption>Figura 1: Imagen de ejemplo</figcaption>
+            </figure>
+
+            <!-- Tabla -->
+            <h3>Tabla de Ejemplo</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Columna 1</th>
+                        <th>Columna 2</th>
+                        <th>Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Formulario -->
+            <h3>Formulario de Contacto</h3>
+            <form action="/enviar" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    background-color: #FFFAF0;
+    font-family: "Poppins", sans-serif;
+    color: #422e24;
+}
+h1 {
+    color: #5C4033;
+}
+p {
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo de la cabecera */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FFE4E1;
+    text-align: left;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+/* Estilo del menú lateral */
+.sidebar {
+    position: fixed;
+    top: 60px; /* Debajo de la cabecera */
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+/* Enlaces del menú lateral */
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+}
+
+/* Efecto hover para el menú */
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+/* Contenido principal ajustado */
+.main-content {
+    margin-left: 250px; /* Espacio para el menú lateral */
+    margin-top: 60px; /* Espacio para la cabecera */
+    padding: 20px;
+    background-color: #f4f4f4;
+    height: 100vh; /* Para demostrar el scroll */
+}
