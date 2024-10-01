@@ -1,6 +1,6 @@
 # HTML Sencillo con Menú Desplegable
 
-![Portada del Proyecto]![icons8-estrella-50](https://github.com/user-attachments/assets/8c6bf2f5-2cd5-44a7-b982-2e8666a5e5a2)
+![icons8-estrella-50](https://github.com/user-attachments/assets/8c6bf2f5-2cd5-44a7-b982-2e8666a5e5a2)
 
 ## Características
 
