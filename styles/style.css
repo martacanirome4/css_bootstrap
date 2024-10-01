@@ -1,44 +1,57 @@
-body {
-    background-color: #FFFAF0;
-    font-family: "Poppins", sans-serif;
-    color: #422e24;
-}
-h1 {
-    color: #5C4033;
-}
-p {
-    text-align: center;
-}
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo de la cabecera */
+body {
+    background-color: #f4f4f4;
+    color: #422e24;
+}
+
+p {
+    text-align: center;
+}
+
+ul, ol{
+    padding-left: 2rem;
+}
+
+h2 {
+    color: #FF1493;
+}
+
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #FFE4E1;
+    background-color: #FFC0CB;
     text-align: left;
     padding: 1rem;
     z-index: 1000;
+    position: relative;
+    margin-bottom: 20px;
 }
 
-/* Estilo del menú lateral */
+.menu-btn {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 18px;
+    margin: 10px;
+}
+
 .sidebar {
     position: fixed;
-    top: 60px; /* Debajo de la cabecera */
-    left: 0;
+    top: 80px;
+    left: -250px;
     width: 250px;
-    height: 100%;
+    height: calc(100% - 80px);
     background-color: #333;
     padding-top: 20px;
+    transition: left 0.3s;
 }
 
-/* Enlaces del menú lateral */
 .sidebar a {
     padding: 15px;
     text-decoration: none;
@@ -47,16 +60,14 @@ header {
     display: block;
 }
 
-/* Efecto hover para el menú */
 .sidebar a:hover {
     background-color: #575757;
 }
 
-/* Contenido principal ajustado */
 .main-content {
-    margin-left: 250px; /* Espacio para el menú lateral */
-    margin-top: 60px; /* Espacio para la cabecera */
+    margin-left: 20px;
+    margin-top: 20px;
     padding: 20px;
     background-color: #f4f4f4;
-    height: 100vh; /* Para demostrar el scroll */
+    height: calc(100vh - 60px);
 }
